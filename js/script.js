@@ -59,7 +59,7 @@
 // var b = Number(y);
 // console.log("No1 : " + a);
 // console.log("No2 : " + b);
-// function sum2 (a,b)
+// function sum2 (a,b) 
 // {
 //   if ( a == b){
 //     return ("No1 == No2. Triple of Sum : " + (3*(a+b)));
@@ -133,7 +133,7 @@
 //   {
 //     return a;
 //   }
-//   else if ( b > c && b > a )
+//   else if ( b > c && b > a )   
 //   {
 //     return b ;
 //   }
@@ -143,6 +143,109 @@
 //   }
 // }
 // console.log("The largest number is " + largeNo(a,b,c));
+
+// Todo - Check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
+
+// var x = prompt("Enter No1: ");
+// var y = prompt("Enter No2: ");
+// var a = Number(x);
+// var b = Number(y);
+// console.log("No1 : " + a);
+// console.log("No2 : " + b);
+// function rangeNo2(a, b) 
+// {
+//   if (((a >= 40 && a <= 60) && (b >= 40 && b <= 60)) || ((a >= 70 && a <= 100) && (b >= 70 && b <= 100))){
+//     if(((a >= 40 && a <= 60) && (b >= 40 && b <= 60))){
+//       console.log("Both numbers " + a + " and " + b + " are in the range b/w 40 and 60.!");
+//     }
+//     if(((a >= 70 && a <= 100) && (b >= 70 && b <= 100))){
+//       console.log("Both numbers " + a + " and " + b + " are in the range b/w 70 and 100.!");
+//     }
+//     return true;
+//   }
+//   else {
+//     console.log("One/Both numbers " + a + " and " + b + " are neither in the range b/w 40 and 60 nor in the range b/w 70 and 100!");
+//     return false;
+//   }
+// }
+// console.log(rangeNo2(a, b));
+
+
+// Todo - Find a value which is nearest to 100 from two different given integer values.
+
+
+// var x = prompt("Enter No1: ");
+// var y = prompt("Enter No2: ");
+// var a = Number(x);
+// var b = Number(y);
+// console.log("No1 : " + a);
+// console.log("No2 : " + b);
+// function nearestNo(a, b) {
+//   if (a != b)
+//   {
+//   a1 = Math.abs(a - 100);
+//   b1 = Math.abs(b - 100);
+//     if (a1 < b1)
+//     {
+//       return (a+ " is nearest to 100.");
+//     }
+//     if (b1 < a1)
+//     {
+//       return (b+ " is nearest to 100.");
+//     }
+//   }
+//   else{
+//     return ("Both numbers are equal.!");
+//   }
+// }
+// console.log(nearestNo(a, b));
+
+// Todo - If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
+
+// var x = prompt("Enter Number: ");
+// var n = Number(x);
+// var sum = 0;
+// console.log("Number : " + n);
+// function prod(n) {
+//   for(var i = 1; i < n; i++){
+//     if((i % 3 === 0 )||(i % 5 === 0)){ // ||(i % 3 === 0 && i % 5 === 0)
+//       sum = sum + i;
+//     }
+//   }
+//   return sum;
+// }
+// console.log(prod(n));
+
+// Todo - Check the total marks of a student in various examinations. The student will get A+ grade if the total marks are in the range 89..100 inclusive, if the examination is "Final-exam." the student will get A+ grade and total marks must be greater than or equal to 90. Return true if the student get A+ grade or false otherwise.
+
+
+// var x = prompt("Final Exam? : ( t / f )");
+// var y = prompt("Enter Marks: ");
+// var marks = Number(y);
+
+// if(x=="t"){
+//   final = true;
+// }
+// if(x=="f"){
+//   final = false;
+// }
+
+// function examType(marks,final){
+//   if((final==true) && (marks >= 90)){
+//     return true;
+//   }
+//   else if((final==false) && (marks >= 89 && marks <= 100)){
+//     return true;
+//   }
+//   else{
+//     return false;
+//   }
+//  }
+
+// console.log(examType(marks,final));
+
+
+
 
 
 
