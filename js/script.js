@@ -248,33 +248,79 @@
 
 // todo - Sort the items of an array. var arr1 = [ -3, 8, 7, 6, 5, -4, 3, 2, 1 ]; Output : -4,-3,1,2,3,5,6,7,8
 
-// var Arr = [-3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+// var arr = [-3, 8, 7, 6, 5, -4, 3, 2, 1 ];
 
-// for (var i = 1; i < Arr.length; i++)
+// for (var i = 1; i < arr.length; i++)
 //     for (var j = 0; j < i; j++)
-//         if (Arr[i] < Arr[j]) {
-//           var x = Arr[i];
-//           Arr[i] = Arr[j];
-//           Arr[j] = x;
+//         if (arr[i] < arr[j]) {
+//           var x = arr[i];
+//           arr[i] = arr[j];
+//           arr[j] = x;
 //         }
 
-// console.log(Arr);
+// console.log(arr);
 
 // todo - Two arrays with individual values, write a program to compute the sum of each individual index value from the given arrays.
 // todo - array1 = [1,0,2,3,4]; array2 = [3,5,6,7,8,13]; Output : [4, 5, 8, 10, 12, 13]
 
 
-// var array1 = [1,0,2,3,4],
-//     array2 = [3,5,6,7,8,13],
-//     l = Math.max(array1.length, array2.length);
+// var arr1 = [1,0,2,3,4],
+//     arr2 = [3,5,6,7,8,13],
+//     l = Math.max(arr1.length, arr2.length);
 // var result = Array(l);
 // for(var i=0; i<l; ++i){
-//   result[i] = (array1[i] || 0) + (array2[i] || 0);
+//   result[i] = (arr1[i] || 0) + (arr2[i] || 0);
 // } 
 // console.log(result);
 
 
 
+// todo - Move an array element from one position to another. 
+// todo - Input : move([10, 20, 30, 40, 50], 0, 2); Output: [20, 30, 10, 40, 50]
+
+// function move(arr, index1, index2) {
+//   let temp = arr;
+//   let n1 = temp[index1];
+//   let n2 = temp[index2];
+
+//   temp[index1] = n2;
+//   temp[index2] = n1;
+//   console.log(temp);
+// }
+// move([10, 20, 30, 40, 50], 0, 2);
+
+
+// todo - Find the most frequent item of an array.
+// todo - arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]; Output : a ( 5 times )
+
+// let arr = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+// let count = 0, mf = 0, item;
+
+// for(let i=0;i<arr.length;i++){
+//   for(let j=0;j<arr.length;j++){
+//     if(arr[i]===arr[j]){
+//       count++;
+//       if(count > mf){
+//         mf = count;
+//         item = arr[i];
+//       }
+//     }
+//   }
+//   count=0;
+// }
+// console.log("Item " + item + " - " + mf + " times.!");
+
+
+// todo - Find all unique values in an given array of numbers. 
+// todo - Input: [1, 2, 2, 3, 4, 4, 5] , Output: [1,2,3,4,5]
+
+// let arr = [1, 2, 2, 3, 4, 4, 5] , temp = [];
+// for(let i=0;i<arr.length;i++){
+//   if(arr[i]!==arr[i+1]){
+//     temp.push(arr[i]);
+//   }
+// }
+// console.log(temp);
 
 
 
